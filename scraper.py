@@ -30,11 +30,12 @@ def setup_selenium():
     options.add_argument("--disable-gpu")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
+    options.add_argument("--disable-search-engine-choice-screen")
     
     # Randomize user-agent to mimic different users
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
     # Specify the path to the ChromeDriver
-    service = Service(r"./chromedriver-win64/chromedriver.exe")  
+    service = Service(r"./chromedriver-mac-arm64/chromedriver")  
 
     # Initialize the WebDriver
     driver = webdriver.Chrome(service=service, options=options)

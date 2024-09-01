@@ -15,6 +15,9 @@ Before you begin, ensure you have the following installed:
 - Python 3.6 or higher
 - Pip for managing Python packages
 
+## Chrome Driver
+https://googlechromelabs.github.io/chrome-for-testing/#stable
+
 ## Installation
 
 Follow these steps to get your development environment running:
